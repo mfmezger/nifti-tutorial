@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# ignore example files.
+img.nii.gz
+mask.nii.gz

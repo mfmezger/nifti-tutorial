@@ -1,6 +1,6 @@
 # Nifti Data Handeling Tutorial
 
-
+Nifti Dataending is .nii or .nii.gz.
 
 ## Installation on Linux
 

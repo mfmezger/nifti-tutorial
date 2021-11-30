@@ -1,5 +1,4 @@
 import nibabel as nib
-import os
 import numpy as np
 from batchviewer import view_batch
 
@@ -7,8 +6,8 @@ from batchviewer import view_batch
 if __name__ == '__main__':
     
     # define the paths to the images.
-    file_path = ""
-    mask_path = ""
+    file_path = "img.nii.gz"
+    mask_path = "mask.nii.gz"
 
     # loading the mask
     if mask is not "":
@@ -28,12 +27,8 @@ if __name__ == '__main__':
     img = img.get_fdata()
     img = img.transpose(2, 0, 1)
 
-
     # visualize the volumes with the batch viewer.
     if mask is not "":
         view_batch(img, mask, width=512, height=512)
     else:
         view_batch(img, width=512, height=512)
-    
-
-

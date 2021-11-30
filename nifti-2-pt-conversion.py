@@ -1,5 +1,4 @@
 import nibabel as nib
-import numpy as np
 import torch
 
 
@@ -10,7 +9,6 @@ if __name__ == '__main__':
     mask_path = ""
     save_path = ""
 
-   
     # loading the image
     img = nib.load(file_path)
     # extract the img.
@@ -28,9 +26,10 @@ if __name__ == '__main__':
     # convert the numpy array to tensor.
     image = torch.from_numpy(image)
 
-    # change to fp16 to reduce the size. This step is not necessary and can be also removed, but could help with training on machines with not alot of VRAM.
+    # change to fp16 to reduce the size. 
+    # This step is not necessary and can be also removed, 
+    # but could help with training on machines with not alot of VRAM.
     image = image.to(torch.float16)
-    # select the save folder
 
     # create the path and name for the file to save.
     path = os.path.join(save_path , file_path.split("/")[-1].split(".")[0]  + ".pt")
@@ -46,4 +45,3 @@ if __name__ == '__main__':
     else:
         # saving the image with mask and it at the specified path.
         torch.save({"vol": image, "id": 1}, path)
-

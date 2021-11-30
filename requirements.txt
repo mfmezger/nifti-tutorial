@@ -1,3 +1,4 @@
 pyqtgraph
 numpy
 nibabel
+torch
