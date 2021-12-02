@@ -10,7 +10,7 @@ if __name__ == '__main__':
     mask_path = "mask.nii.gz"
 
     # loading the mask
-    if mask is not "":
+    if mask_path != "":
         mask = nib.load(mask_path)
         # this takes the pixel data.
         mask = mask.get_fdata()
@@ -28,7 +28,7 @@ if __name__ == '__main__':
     img = img.transpose(2, 0, 1)
 
     # visualize the volumes with the batch viewer.
-    if mask is not "":
+    if mask_path != "":
         view_batch(img, mask, width=512, height=512)
     else:
         view_batch(img, width=512, height=512)

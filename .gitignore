@@ -131,3 +131,4 @@ dmypy.json
 # ignore example files.
 img.nii.gz
 mask.nii.gz
+img.pt
