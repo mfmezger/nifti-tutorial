@@ -10,8 +10,10 @@ Download the repository.
 
 Install the requirements.txt.
 
-`cd nifti-tutorial
-pip install -r requirements.txt`
+```
+cd nifti-tutorial  
+pip install -r requirements.txt
+```
 
 ## Nifti Inspector
 You can use the Nifti Inspecotr to visualize the Nifti Files with the Batchviewer Libary. (https://github.com/FabianIsensee/BatchViewer)
