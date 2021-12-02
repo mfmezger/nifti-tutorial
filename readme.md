@@ -18,7 +18,8 @@ You can use the Nifti Inspecotr to visualize the Nifti Files with the Batchviewe
 
 ### Installation of Batch Viewer
 
-```git clone https://github.com/FabianIsensee/BatchViewer.git
+```
+git clone https://github.com/FabianIsensee/BatchViewer.git
 cd BatchViewer
 pip install . 
 ```
