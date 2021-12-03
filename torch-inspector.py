@@ -3,7 +3,7 @@ from batchviewer import view_batch
 import torch
 
 if __name__ == '__main__':
-    file_path = "img.pt"
+    file_path = "data/img.pt"
 
     file = torch.load(file_path)
 

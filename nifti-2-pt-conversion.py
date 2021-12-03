@@ -1,14 +1,14 @@
 import os
 import torch
 import nibabel as nib
-
+from pathlib import Path
 
 if __name__ == '__main__':
     
     # define the paths to the images.
     file_path = "img.nii.gz"
     mask_path = "mask.nii.gz"
-    save_path = ""
+    save_path = "data/"
 
     # loading the image
     img = nib.load(file_path)
@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
     # create the path and name for the file to save.
     path = os.path.join(save_path , file_path.split("/")[-1].split(".")[0]  + ".pt")
-
+    Path("data").mkdir(parents=False, exist_ok=True)
 
     # save the volumes as torch files.
     if mask_path != "":
