@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 
 ## Nifti Inspector
-You can use the Nifti Inspecotr to visualize the Nifti Files with the Batchviewer Libary. (https://github.com/FabianIsensee/BatchViewer)
+You can use the Nifti Inspector to visualize the Nifti Files with the Batchviewer Libary. (https://github.com/FabianIsensee/BatchViewer)
 
 ### Installation of Batch Viewer
 
