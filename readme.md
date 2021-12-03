@@ -1,4 +1,4 @@
-# Nifti Data Handeling Tutorial
+# Nifti Data Handeling Tutorial for PyTorch
 
 Nifti Dataending is .nii or .nii.gz.
 
@@ -34,3 +34,11 @@ It is also possible to inspect the images using Fiji.
 
 Just install Fiji, then you can open the images easily by choosing File -> Open. If you want to open Dicom Images you have to open it as File -> Import -> Image Sequence.
 
+## Nifti to Pytorch File Converter
+
+You can use this script to convert a nifti image with or without mask to a pytorch file (.pt). 
+
+## Torch inspector
+
+This script allows to visualize the data that was created with the  
+```Nifti-2-pt-conversion.py```.
