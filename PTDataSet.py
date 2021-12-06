@@ -16,6 +16,8 @@ class TorchDataSet(Dataset):
         self.directory = directory
         self.images = os.listdir(directory)
 
+    def __len__(self):
+        return len(self.directory)
 
     def __getitem__(self, idx):
         if torch.is_tensor(idx):

@@ -1,4 +1,4 @@
-# Nifti Data Handeling Tutorial for PyTorch
+# Nifti Data Handeling Tutorial for PyTorch 
 
 Nifti Dataending is .nii or .nii.gz.
 
