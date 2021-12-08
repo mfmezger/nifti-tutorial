@@ -132,3 +132,6 @@ dmypy.json
 img.nii.gz
 mask.nii.gz
 img.pt
+
+# ignore PyCharm Config Folders.
+.idea
