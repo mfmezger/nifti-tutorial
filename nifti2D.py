@@ -54,11 +54,6 @@ if __name__ == '__main__':
 
         
         tmp_img = Image.fromarray(tmp_img)
-        
-        
-
-
-
 
         tmp_img.save("2D/img" + "/"+ str(i) + ".png")
         if tmp_mask.max() == 255:

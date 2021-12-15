@@ -36,9 +36,18 @@ Just install Fiji, then you can open the images easily by choosing File -> Open.
 
 ## Nifti to Pytorch File Converter
 
-You can use this script to convert a nifti image with or without mask to a pytorch file (.pt). 
+You can use this script to convert a nifti image with or without mask to a pytorch file (.pt). Just run: 
+```python nifti-2-pt-conversion.py```
+
 
 ## Torch inspector
 
 This script allows to visualize the data that was created with the  
-```Nifti-2-pt-conversion.py```.
+```python nifti-2-pt-conversion.py```.
+
+
+## Nifti2D
+
+This script converts a 3D Volume in 2D slices and from there into PNG Images. 
+```python nifti2D.py```
+
